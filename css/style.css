@@ -121,7 +121,7 @@ img {
 @media (max-width: 768px) {
   .text-container {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 }
 h2 {
