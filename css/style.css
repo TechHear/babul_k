@@ -125,10 +125,10 @@ img {
   }
 }
 h2 {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 600;
-  color: #000;
-  text-shadow: 1px 1px 0 #fff;
+  color: #0e4df8;
+  text-shadow: 1px 1px 0 #070707;
 }
 
 .animated-section {
@@ -255,12 +255,32 @@ h2 {
 }
 .ourfacilities {
   background-color: #004188;
+  background-image: radial-gradient(
+    circle at center bottom,
+    #004188 41%,
+    #034894 0%
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-width: 0px 0px 0px 0px;
+  border-color: #eae9e9;
+  border-style: solid;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .ourfacilities {
+    background-color: #004188;
+    color: white;
+    padding: auto;
+  }
+}
+
 i {
   background-color: #d3d3d3;
   color: rgb(0, 4, 255);
   border-radius: 50%;
+  padding: 2px;
   border: 0.5px solid green;
 }
 
@@ -275,4 +295,80 @@ i {
   100% {
     transform: rotate(360deg);
   }
+}
+.star i {
+  color: rgb(7, 23, 255) !important;
+  background-color: none;
+  border: none;
+  background: none;
+  animation: none;
+  font-size: 20px;
+}
+
+.star i:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: green;
+}
+.imageTeacher img {
+  border: 2px solid #f6f6f6;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: 35%;
+}
+
+#student {
+  background-color: rgba(179, 177, 177, 0.411);
+}
+#news {
+  background-color: rgb(253, 250, 250);
+}
+.offerImage img {
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 80%;
+  margin-left: 30px;
+}
+#offer {
+  background-color: #004188;
+  color: white;
+}
+
+/* ------------------- */
+#scroll-to-top-btn {
+  display: none; /* hide the button by default */
+  position: fixed; /* make the button always visible on the screen */
+  bottom: 20px; /* position the button 20px from the bottom of the screen */
+  right: 20px; /* position the button 20px from the right edge of the screen */
+  font-size: 24px; /* adjust the size of the button */
+  padding: 8px; /* add some padding to the button for better visibility */
+  background-color: #333; /* customize the button's background color */
+  color: #fff; /* customize the button's text color */
+  border: none; /* remove the button's border */
+  border-radius: 4px; /* add some border radius to make the button look nicer */
+  cursor: pointer; /* add a cursor pointer to the button for better usability */
+}
+
+/* --------------- */
+/* Set the color of the thumb and track of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* adjust the width of the scrollbar */
+  background-color: #f5f5f5; /* set the background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #423fff; /* set the color of the scrollbar thumb */
+  border-radius: 50px;
+}
+
+/* Set the color of the thumb and track of the scrollbar in Firefox */
+/* Note that this only works in Firefox 64 and later versions */
+/* For older versions of Firefox, you can use a JavaScript plugin */
+/* such as "Overlay Scrollbars" or "Perfect Scrollbar" */
+/* See the links below for more information */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color */
+/* https://github.com/oswaldoacauan/overlayscrollbars */
+/* https://github.com/noraesae/perfect-scrollbar */
+html {
+  scrollbar-color: #555 #ff1414;
 }
